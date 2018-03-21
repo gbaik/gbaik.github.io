@@ -1,10 +1,14 @@
 {
   "name": "basic-react-boilerplate",
   "version": "1.0.6",
+  "homepage": "http://www.gideonbaik.com",
   "description": "Basic react boilerplate",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config=webpack.config.js --display-error-details --watch"
+    "start": "webpack --config=webpack.config.js --display-error-details --watch",
+    "build": "webpack --config=webpack.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Gideon Baik",
   "license": "MIT",
@@ -30,6 +34,5 @@
   },
   "bugs": {
     "url": "https://github.com/gbaik/Basic-React-Boilerplate/issues"
-  },
-  "homepage": "https://github.com/gbaik/Basic-React-Boilerplate#readme"
+  }
 }
